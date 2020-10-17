@@ -31,6 +31,6 @@ int main ()
     //4 triangulation
     vector<Point3d> points;
     triangulation(keypoints_1,keypoints_2,matches,K,R,t,points);
-
+    
     return 0;
 }

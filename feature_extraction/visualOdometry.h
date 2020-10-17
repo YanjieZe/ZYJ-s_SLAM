@@ -42,13 +42,6 @@ void triangulation(
         vector<Point3d>& points
 );
 
-Point2d pixel2cam ( const Point2d& p, const Mat& K )
-{
-    return Point2d
-            (
-                    ( p.x - K.at<double> ( 0,2 ) ) / K.at<double> ( 0,0 ),
-                    ( p.y - K.at<double> ( 1,2 ) ) / K.at<double> ( 1,1 )
-            );
-}
+Point2d pixel2cam ( const Point2d& p, const Mat& K );
 
 #endif //FEATURE_EXTRACTION_VISUALODOMETRY_H
