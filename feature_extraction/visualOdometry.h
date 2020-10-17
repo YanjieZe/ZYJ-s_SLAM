@@ -29,4 +29,14 @@ void pose_estimation_2d2d(
         Mat& R,
         Mat& t );
 
+void triangulation(
+        const vector<KeyPoint>& keypoint_1,
+        const vector<KeyPoint>& keypoint_2,
+        const std::vector<DMatch>& matches,
+        const Mat& K,
+        const Mat& R,
+        const Mat& t,
+        vector<Point3d>& points
+)
+
 #endif //FEATURE_EXTRACTION_VISUALODOMETRY_H

@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/zyj/cs/ZYJ's_SLAM/feature_extraction/feature_extraction.cpp" "/home/zyj/cs/ZYJ's_SLAM/feature_extraction/cmake-build-debug/CMakeFiles/main.dir/feature_extraction.cpp.o"
   "/home/zyj/cs/ZYJ's_SLAM/feature_extraction/main.cpp" "/home/zyj/cs/ZYJ's_SLAM/feature_extraction/cmake-build-debug/CMakeFiles/main.dir/main.cpp.o"
   "/home/zyj/cs/ZYJ's_SLAM/feature_extraction/pose_estimation_2d2d.cpp" "/home/zyj/cs/ZYJ's_SLAM/feature_extraction/cmake-build-debug/CMakeFiles/main.dir/pose_estimation_2d2d.cpp.o"
+  "/home/zyj/cs/ZYJ's_SLAM/feature_extraction/triangulation.cpp" "/home/zyj/cs/ZYJ's_SLAM/feature_extraction/cmake-build-debug/CMakeFiles/main.dir/triangulation.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

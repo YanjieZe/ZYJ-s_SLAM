@@ -204,6 +204,33 @@ pose_estimation_2d2d.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/pose_estimation_2d2d.cpp.s
 .PHONY : pose_estimation_2d2d.cpp.s
 
+triangulation.o: triangulation.cpp.o
+
+.PHONY : triangulation.o
+
+# target to build an object file
+triangulation.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/triangulation.cpp.o
+.PHONY : triangulation.cpp.o
+
+triangulation.i: triangulation.cpp.i
+
+.PHONY : triangulation.i
+
+# target to preprocess a source file
+triangulation.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/triangulation.cpp.i
+.PHONY : triangulation.cpp.i
+
+triangulation.s: triangulation.cpp.s
+
+.PHONY : triangulation.s
+
+# target to generate assembly for a file
+triangulation.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/triangulation.cpp.s
+.PHONY : triangulation.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +249,9 @@ help:
 	@echo "... pose_estimation_2d2d.o"
 	@echo "... pose_estimation_2d2d.i"
 	@echo "... pose_estimation_2d2d.s"
+	@echo "... triangulation.o"
+	@echo "... triangulation.i"
+	@echo "... triangulation.s"
 .PHONY : help
 
 
