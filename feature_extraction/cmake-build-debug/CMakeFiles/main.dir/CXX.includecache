@@ -18,6 +18,10 @@ visualOdometry.h
 visualOdometry.h
 /home/zyj/cs/ZYJ's_SLAM/feature_extraction/visualOdometry.h
 
+/home/zyj/cs/ZYJ's_SLAM/feature_extraction/triangulation.cpp
+visualOdometry.h
+/home/zyj/cs/ZYJ's_SLAM/feature_extraction/visualOdometry.h
+
 /home/zyj/cs/ZYJ's_SLAM/feature_extraction/visualOdometry.h
 iostream
 -

@@ -28,7 +28,9 @@ int main ()
     Mat R, t;
     pose_estimation_2d2d(keypoints_1, keypoints_2, matches, K, R, t);
 
-    Mat t_x =
+    //4 triangulation
+    vector<Point3d> points;
+    triangulation(keypoints_1,keypoints_2,matches,K,R,t,points);
 
     return 0;
 }

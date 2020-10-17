@@ -22,3 +22,22 @@ vector<DMatch>& good_matches)
         Mat& t )
         
  封装了使用**对极约束**进行相机运动的求解的功能。
+ 
+ ### （3）三角测量
+ >void triangulation(
+        const vector<KeyPoint>& keypoint_1,
+        const vector<KeyPoint>& keypoint_2,
+        const std::vector<DMatch>& matches,
+        const Mat& K,
+        const Mat& R,
+        const Mat& t,
+        vector<Point3d>& points
+);
+
+利用**三角测量**获得三维空间中的点的坐标
+ 
+###  (4)像素坐标转化到相机坐标
+
+> Point2d pixel2cam ( const Point2d& p, const Mat& K )
+
+

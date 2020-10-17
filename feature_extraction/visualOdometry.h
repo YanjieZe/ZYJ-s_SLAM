@@ -14,13 +14,15 @@
 using namespace std;
 using namespace cv;
 
+//特征点匹配
 void find_feature_matches(
         Mat& img_1,
         Mat& img_2,
         vector<KeyPoint>& keypoints_1,
         vector<KeyPoint>& keypoints_2,
-        vector<DMatch>& good_matches);
+        vector<DMatch>& good_matches );
 
+//对极约束
 void pose_estimation_2d2d(
         std::vector<KeyPoint> keypoints_1,
         std::vector<KeyPoint> keypoints_2,
@@ -29,6 +31,7 @@ void pose_estimation_2d2d(
         Mat& R,
         Mat& t );
 
+//三角测量
 void triangulation(
         const vector<KeyPoint>& keypoint_1,
         const vector<KeyPoint>& keypoint_2,
@@ -37,6 +40,15 @@ void triangulation(
         const Mat& R,
         const Mat& t,
         vector<Point3d>& points
-)
+);
+
+Point2d pixel2cam ( const Point2d& p, const Mat& K )
+{
+    return Point2d
+            (
+                    ( p.x - K.at<double> ( 0,2 ) ) / K.at<double> ( 0,0 ),
+                    ( p.y - K.at<double> ( 1,2 ) ) / K.at<double> ( 1,1 )
+            );
+}
 
 #endif //FEATURE_EXTRACTION_VISUALODOMETRY_H

@@ -25,5 +25,26 @@ void triangulation(
             R.at<double>(2,0), R.at<double>(2,1), R.at<double>(2,2), t.at<double>(2,0)
             );
 
+    vector<Point2d> pts_1, pts_2;
+    for(DMatch m:matches)
+    {
+        // convert Pixel Coordinate to Camera Coordinate
+        pts_1.push_back(pixel2cam(keypoint_1[m.queryIdx].pt, K));
+        pts_2.push_back(pixel2cam(keypoint_2[m.trainIdx].pt, K));
+    }
 
+    Mat pts_4d;
+    cv::triangulatePoints(T1, T2, pts_1, pts_2, pts_4d);
+
+    for(int i=0; i<pts_4d.cols; i++)
+    {
+        Mat x = pts_4d.col(i);
+        x /= x.at<float>(3,0);
+        Point3d p(
+                x.at<float>(0,0),
+                x.at<float>(1,0),
+                x.at<float>(2,0)
+                );
+        points.push_back(p);
+    }
 }
