@@ -27,6 +27,16 @@ opencv2/features2d/features2d.hpp
 -
 opencv2/highgui/highgui.hpp
 -
+opencv2/calib3d.hpp
+-
+
+/usr/local/include/opencv4/opencv2/calib3d.hpp
+opencv2/core.hpp
+/usr/local/include/opencv4/opencv2/opencv2/core.hpp
+opencv2/features2d.hpp
+/usr/local/include/opencv4/opencv2/opencv2/features2d.hpp
+opencv2/core/affine.hpp
+/usr/local/include/opencv4/opencv2/opencv2/core/affine.hpp
 
 /usr/local/include/opencv4/opencv2/core.hpp
 opencv2/core/cvdef.h
@@ -57,6 +67,10 @@ opencv2/core/optim.hpp
 /usr/local/include/opencv4/opencv2/opencv2/core/optim.hpp
 opencv2/core/ovx.hpp
 /usr/local/include/opencv4/opencv2/opencv2/core/ovx.hpp
+
+/usr/local/include/opencv4/opencv2/core/affine.hpp
+opencv2/core.hpp
+-
 
 /usr/local/include/opencv4/opencv2/core/base.hpp
 opencv2/opencv_modules.hpp

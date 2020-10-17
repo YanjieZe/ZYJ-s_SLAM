@@ -3,13 +3,14 @@
 //
 #include "visualOdometry.h"
 
-/*
+
 void pose_estimation_2d2d(
         std::vector<KeyPoint> keypoints_1,
         std::vector<KeyPoint> keypoints_2,
         std::vector<DMatch> matches,
         Mat& K,
-        Mat& R, Mat& t )
+        Mat& R,
+        Mat& t )
 {
     //1 convert points
     vector<Point2f> points1;
@@ -24,8 +25,22 @@ void pose_estimation_2d2d(
 
     //2 compute fundamental matrix
     Mat fundamental_matrix;
-    fundamental_matrix = findFundamentalMat(points1,points2,CV_FM_8P0INT);
-    cout<<"fundamental_matrix is"<<endl<<fundamental_matrix<<endl;
+    fundamental_matrix = findFundamentalMat(points1,points2,FM_8POINT);
+    cout<<"fundamental_matrix is "<<endl<<fundamental_matrix<<endl;
 
+    //3 compute essential_matrix;
+    Point2d principal_point(325.1,249.7); // 光心，标定值
+    int focal_length = 521;// 焦距，标定值
+    Mat essential_matrix;
+    essential_matrix = findEssentialMat(points1,points2,focal_length,principal_point,RANSAC);
+    cout<<"essential_matrix is "<<endl<<essential_matrix<<endl;
+
+    //4 compute homography matrix
+    Mat homography_matrix;
+    homography_matrix = findHomography(points1,points2,RANSAC,3,noArray(),2000,0.99);
+    cout<<"homography_matrix is "<<endl<<homography_matrix<<endl;
+
+    recoverPose(essential_matrix,points1,points2,R,t,focal_length,principal_point);
+    cout<<"R is "<<endl<<R<<endl;
+    cout<<"t is "<<endl<<t<<endl;
 }
- */

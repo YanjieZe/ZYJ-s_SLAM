@@ -3,7 +3,9 @@
 
 CMakeFiles/main.dir/feature_extraction.cpp.o: ../feature_extraction.cpp
 CMakeFiles/main.dir/feature_extraction.cpp.o: ../visualOdometry.h
+CMakeFiles/main.dir/feature_extraction.cpp.o: /usr/local/include/opencv4/opencv2/calib3d.hpp
 CMakeFiles/main.dir/feature_extraction.cpp.o: /usr/local/include/opencv4/opencv2/core.hpp
+CMakeFiles/main.dir/feature_extraction.cpp.o: /usr/local/include/opencv4/opencv2/core/affine.hpp
 CMakeFiles/main.dir/feature_extraction.cpp.o: /usr/local/include/opencv4/opencv2/core/base.hpp
 CMakeFiles/main.dir/feature_extraction.cpp.o: /usr/local/include/opencv4/opencv2/core/bufferpool.hpp
 CMakeFiles/main.dir/feature_extraction.cpp.o: /usr/local/include/opencv4/opencv2/core/check.hpp
@@ -46,7 +48,9 @@ CMakeFiles/main.dir/feature_extraction.cpp.o: /usr/local/include/opencv4/opencv2
 
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp
 CMakeFiles/main.dir/main.cpp.o: ../visualOdometry.h
+CMakeFiles/main.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/calib3d.hpp
 CMakeFiles/main.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/core.hpp
+CMakeFiles/main.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/core/affine.hpp
 CMakeFiles/main.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/core/base.hpp
 CMakeFiles/main.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/core/bufferpool.hpp
 CMakeFiles/main.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/core/check.hpp
@@ -89,7 +93,9 @@ CMakeFiles/main.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/videoio.hpp
 
 CMakeFiles/main.dir/pose_estimation_2d2d.cpp.o: ../pose_estimation_2d2d.cpp
 CMakeFiles/main.dir/pose_estimation_2d2d.cpp.o: ../visualOdometry.h
+CMakeFiles/main.dir/pose_estimation_2d2d.cpp.o: /usr/local/include/opencv4/opencv2/calib3d.hpp
 CMakeFiles/main.dir/pose_estimation_2d2d.cpp.o: /usr/local/include/opencv4/opencv2/core.hpp
+CMakeFiles/main.dir/pose_estimation_2d2d.cpp.o: /usr/local/include/opencv4/opencv2/core/affine.hpp
 CMakeFiles/main.dir/pose_estimation_2d2d.cpp.o: /usr/local/include/opencv4/opencv2/core/base.hpp
 CMakeFiles/main.dir/pose_estimation_2d2d.cpp.o: /usr/local/include/opencv4/opencv2/core/bufferpool.hpp
 CMakeFiles/main.dir/pose_estimation_2d2d.cpp.o: /usr/local/include/opencv4/opencv2/core/check.hpp
