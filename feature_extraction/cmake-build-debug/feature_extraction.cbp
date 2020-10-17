@@ -84,7 +84,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/zyj/cs/ZYJ&apos;s_SLAM/feature_extraction/feature_extraction.cpp">
+			<Option target="main"/>
+		</Unit>
 		<Unit filename="/home/zyj/cs/ZYJ&apos;s_SLAM/feature_extraction/main.cpp">
+			<Option target="main"/>
+		</Unit>
+		<Unit filename="/home/zyj/cs/ZYJ&apos;s_SLAM/feature_extraction/pose_estimation_2d2d.cpp">
+			<Option target="main"/>
+		</Unit>
+		<Unit filename="/home/zyj/cs/ZYJ&apos;s_SLAM/feature_extraction/visualOdometry.h">
 			<Option target="main"/>
 		</Unit>
 		<Unit filename="/home/zyj/cs/ZYJ&apos;s_SLAM/feature_extraction/CMakeLists.txt">

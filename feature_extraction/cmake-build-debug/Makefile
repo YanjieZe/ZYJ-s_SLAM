@@ -123,6 +123,33 @@ main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+feature_extraction.o: feature_extraction.cpp.o
+
+.PHONY : feature_extraction.o
+
+# target to build an object file
+feature_extraction.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/feature_extraction.cpp.o
+.PHONY : feature_extraction.cpp.o
+
+feature_extraction.i: feature_extraction.cpp.i
+
+.PHONY : feature_extraction.i
+
+# target to preprocess a source file
+feature_extraction.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/feature_extraction.cpp.i
+.PHONY : feature_extraction.cpp.i
+
+feature_extraction.s: feature_extraction.cpp.s
+
+.PHONY : feature_extraction.s
+
+# target to generate assembly for a file
+feature_extraction.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/feature_extraction.cpp.s
+.PHONY : feature_extraction.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -150,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+pose_estimation_2d2d.o: pose_estimation_2d2d.cpp.o
+
+.PHONY : pose_estimation_2d2d.o
+
+# target to build an object file
+pose_estimation_2d2d.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/pose_estimation_2d2d.cpp.o
+.PHONY : pose_estimation_2d2d.cpp.o
+
+pose_estimation_2d2d.i: pose_estimation_2d2d.cpp.i
+
+.PHONY : pose_estimation_2d2d.i
+
+# target to preprocess a source file
+pose_estimation_2d2d.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/pose_estimation_2d2d.cpp.i
+.PHONY : pose_estimation_2d2d.cpp.i
+
+pose_estimation_2d2d.s: pose_estimation_2d2d.cpp.s
+
+.PHONY : pose_estimation_2d2d.s
+
+# target to generate assembly for a file
+pose_estimation_2d2d.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/pose_estimation_2d2d.cpp.s
+.PHONY : pose_estimation_2d2d.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... main"
+	@echo "... feature_extraction.o"
+	@echo "... feature_extraction.i"
+	@echo "... feature_extraction.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... pose_estimation_2d2d.o"
+	@echo "... pose_estimation_2d2d.i"
+	@echo "... pose_estimation_2d2d.s"
 .PHONY : help
 
 

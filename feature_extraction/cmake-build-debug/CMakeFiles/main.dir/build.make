@@ -57,9 +57,22 @@ include CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main.dir/flags.make
 
+CMakeFiles/main.dir/feature_extraction.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/feature_extraction.cpp.o: ../feature_extraction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/zyj/cs/ZYJ's_SLAM/feature_extraction/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/feature_extraction.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/feature_extraction.cpp.o -c "/home/zyj/cs/ZYJ's_SLAM/feature_extraction/feature_extraction.cpp"
+
+CMakeFiles/main.dir/feature_extraction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/feature_extraction.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/zyj/cs/ZYJ's_SLAM/feature_extraction/feature_extraction.cpp" > CMakeFiles/main.dir/feature_extraction.cpp.i
+
+CMakeFiles/main.dir/feature_extraction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/feature_extraction.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/zyj/cs/ZYJ's_SLAM/feature_extraction/feature_extraction.cpp" -o CMakeFiles/main.dir/feature_extraction.cpp.s
+
 CMakeFiles/main.dir/main.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/zyj/cs/ZYJ's_SLAM/feature_extraction/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/zyj/cs/ZYJ's_SLAM/feature_extraction/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.cpp.o -c "/home/zyj/cs/ZYJ's_SLAM/feature_extraction/main.cpp"
 
 CMakeFiles/main.dir/main.cpp.i: cmake_force
@@ -70,14 +83,31 @@ CMakeFiles/main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/zyj/cs/ZYJ's_SLAM/feature_extraction/main.cpp" -o CMakeFiles/main.dir/main.cpp.s
 
+CMakeFiles/main.dir/pose_estimation_2d2d.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/pose_estimation_2d2d.cpp.o: ../pose_estimation_2d2d.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/zyj/cs/ZYJ's_SLAM/feature_extraction/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/pose_estimation_2d2d.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/pose_estimation_2d2d.cpp.o -c "/home/zyj/cs/ZYJ's_SLAM/feature_extraction/pose_estimation_2d2d.cpp"
+
+CMakeFiles/main.dir/pose_estimation_2d2d.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/pose_estimation_2d2d.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/zyj/cs/ZYJ's_SLAM/feature_extraction/pose_estimation_2d2d.cpp" > CMakeFiles/main.dir/pose_estimation_2d2d.cpp.i
+
+CMakeFiles/main.dir/pose_estimation_2d2d.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/pose_estimation_2d2d.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/zyj/cs/ZYJ's_SLAM/feature_extraction/pose_estimation_2d2d.cpp" -o CMakeFiles/main.dir/pose_estimation_2d2d.cpp.s
+
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/main.cpp.o"
+"CMakeFiles/main.dir/feature_extraction.cpp.o" \
+"CMakeFiles/main.dir/main.cpp.o" \
+"CMakeFiles/main.dir/pose_estimation_2d2d.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
+main: CMakeFiles/main.dir/feature_extraction.cpp.o
 main: CMakeFiles/main.dir/main.cpp.o
+main: CMakeFiles/main.dir/pose_estimation_2d2d.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: /usr/local/lib/libopencv_gapi.so.4.5.0
 main: /usr/local/lib/libopencv_stitching.so.4.5.0
@@ -132,7 +162,7 @@ main: /usr/local/lib/libopencv_photo.so.4.5.0
 main: /usr/local/lib/libopencv_imgproc.so.4.5.0
 main: /usr/local/lib/libopencv_core.so.4.5.0
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/zyj/cs/ZYJ's_SLAM/feature_extraction/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/zyj/cs/ZYJ's_SLAM/feature_extraction/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
